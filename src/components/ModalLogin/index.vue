@@ -53,7 +53,8 @@
       rounded-full bg-brand-main transition-all duration-150"
       type="submit"
     >
-      Entrar
+      <icon v-if="state.isLoading" name="loading" class="animate animate-spin"/>
+      <span v-else>Entrar</span>
     </button>
     </form>
   </div>
@@ -65,10 +66,12 @@ import { useRouter } from 'vue-router'
 import { useField } from 'vee-validate'
 import { useToast } from 'vue-toastification'
 import useModal from '../../hooks/useModal'
+import Icon from '../Icon/'
 import { validateEmptyAndLength3, validateEmptyAndEmail } from '../../utils/validators'
 import services from '../../services'
 
 export default {
+  components: { Icon },
   setup () {
     const router = useRouter()
     const modal = useModal()

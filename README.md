@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="feedbacker" title="feedbacker landingpage" src=".github/logo.png" width="260"/>
+  <img alt="feedbacker" title="feedbacker landingpage" src=".github/logo_color.png" width="260"/>
 </h1>
 
 <p align="center">
